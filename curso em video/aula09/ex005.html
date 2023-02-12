@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX005</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: black;
+        color: white;
+        font: normal 18pt Arial;
+    }
+    h1{
+        text-align: center;
+        padding-top: 25px;
+        color: white;
+    }
+    p{
+        text-align: center;
+        padding-top: 25px;
+        color: aqua;
+    }
+    div{
+        text-align: center;
+        padding-top: 25px;
+        color: blue;
+    }
+    strong{
+        color: chartreuse;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM(Document Object Model)</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="mensagem">
+        Clique em mim
+    </div>
+    <p>
+        Aprende a usar <strong>Dom</strong> em <strong>JavaScript</strong>
+    </p>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0];
+        /*
+        var d =window.document.getElementById('mensagem');
+        d.style.background = 'purple';
+        d.innerText = "Estou aguardando......";
+        d.style.paddingBottom = '25px';
+        d.style.margin = '10px'
+        */
+        var d = window.document.querySelector('div#mensagem');
+        d.style.color = 'purple'
+    </script>
+</body>
+</html>

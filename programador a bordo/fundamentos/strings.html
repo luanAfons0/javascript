@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <h1>Strings</h1>
+    <script>
+
+        //variaveis
+        var nome = 'Programador a bordo';
+        console.log(nome);
+
+        var canalYoutube = '   Programador a Bordo        ';
+        console.log(canalYoutube);
+
+        var autor = 'Ayrton';
+
+        //tamanho da string
+        console.log(nome.length);
+
+        //tamanho da palavra
+        console.log('Programador'.length);
+
+        //transformando todas as letra em maiusculas
+        console.log(nome.toUpperCase());
+
+        //transformando todas as letras em minusculas
+        console.log(nome.toLowerCase());
+
+        //procura em string com resultado verdadeiro
+        console.log(nome.indexOf('dor'));
+
+        //procura em string com resultado falso
+        console.log(nome.indexOf('teste'));
+
+        //redefinir palavras de uma var/string
+        console.log(nome.replace('Programador','Desenvolvedor'));
+
+        //cortar variaveis strings
+        console.log(nome.slice(3,8));
+
+        //remoção de espaços de uma variavel
+        console.log(canalYoutube.trim());
+
+
+        //concatenacao feia
+        console.log('O canal do youtube '+canalYoutube.trim()+ ' foi criado por'+autor);
+
+        //template string
+        console.log(`O canal do youtube ${canalYoutube} foi criado por ${autor}`);
+
+    </script>
+</body>
+</html>

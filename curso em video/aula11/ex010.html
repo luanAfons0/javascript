@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex010</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velôcidade do carro </p>
+    <input type="number" name="txtvel" class="veloci"> Km/h  
+
+    <input type="button" value="Verificar" onclick="calc()">
+    <div class="resultado">
+    </div>
+    <script>
+        function calc(){
+        var veloci = window.document.querySelector('.veloci');
+        var vel = Number(veloci.value);
+        var resultado = window.document.querySelector('.resultado');
+
+        resultado.innerHTML = `Sua velocidade é de ${vel}Km/h<br>`;
+        
+        if( vel > 80 ){
+            resultado.innerHTML += 'Vc esta acima da velocidade';
+        }else{
+            resultado.innerHTML += 'Vc esta no limite de velocidade';
+        };
+
+        }
+    </script>
+</body>
+</html>

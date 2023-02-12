@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+</head>
+<body>
+    <h1>Sistema de Migração</h1>
+    <p>Você é de qual pais ?</p>
+    <input type="text" class="ident">
+    <input type="button" class="but" value="Verificar" onclick="migracao()">
+    <div class="resultado">
+    </div>
+    
+
+    <script>
+        function migracao(){
+            var ident = window.document.querySelector('.ident');
+            var nac = ident.value;
+            var resultado = window.document.querySelector('.resultado');   
+            resultado.innerHTML = `Você é do pais ${nac}<br>`
+
+            if( ident =='BR'){
+                resultado.innerHTML += 'Você é brasileiro';
+            }else{
+                resultado.innerHTML += 'Você é estrangeiro';
+            }
+        };
+    </script>
+</body>
+</html>

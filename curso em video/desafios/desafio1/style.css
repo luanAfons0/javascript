@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 25px 0 ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.box{
+    width: 80%;
+    height: 250px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.514) 10px 10px 10px;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+}
+
+h4{
+    text-align: center;
+    padding: 10px;
+}
+
+.center-img{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 20px;
+}
